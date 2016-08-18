@@ -23,15 +23,17 @@ describe('CommentBox Test', ()=> {
   //test for textarea
   describe('entering some text', ()=>{
     beforeEach(() => {
-      component.find('textarea').simulate('change', 'new comment');
+      component.find('textarea').simulate('change', 'dummy test comment');
     });
 
     it('shows that text in the textarea', () => {
-
+      expect(component.find('textarea')).to.have.value('dummy test comment');
     });
 
     it ('when submitted, clears the input', () => {
-
+      //console.log(component);
+      component.simulate('submit');
+      expect(component.find('textarea')).to.have.value('');
     });
   });
 });
