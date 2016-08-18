@@ -1,6 +1,8 @@
-# test react with mochaJS & chai-jquery
+# react TDD
 
-to run app  
+this repo is personal practice for react TDD(Test driven development). the test is built with [MochaJS](https://mochajs.org/), [Chai-jquery](https://github.com/chaijs/chai-jquery)
+
+to run app
 
 ```
 $ npm start
